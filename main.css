@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary: #203731;
-  --secondary: #d4af37;
+  --green: #203731;
+  --gold: #d4af37;
   --red: #a30006;
   --white: #fff;
   --black: #000;
@@ -32,12 +32,12 @@ li {
 /* ***** Galaxy Fold ***** */
 /* Navigation */
 header {
-  background-color: var(--primary);
+  background-color: var(--green);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  min-height: 8vh;
+  height: 8vh;
 }
 
 .skip-nav-btn {
@@ -51,6 +51,8 @@ header {
   color: var(--white);
   font-family: var(--font-default);
   font-size: 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 .skip-nav-btn:focus {
@@ -59,11 +61,6 @@ header {
 
 header img {
   height: 6vh;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--secondary);
 }
 
 .header-menu-toggle {
@@ -86,7 +83,7 @@ header a {
 .hamburger-3 {
   width: 30px;
   height: 3px;
-  background-color: var(--secondary);
+  background-color: var(--gold);
   margin: 3px auto;
   transition: transform 0.25s ease;
 }
@@ -105,12 +102,12 @@ header a {
   background-color: var(--red);
 }
 
-nav {
+.nav-list {
   position: absolute;
-  height: 62vh;
+  min-height: 47vh;
   top: 8vh;
   left: -100%;
-  background-color: var(--primary);
+  background-color: var(--green);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -119,15 +116,82 @@ nav {
   justify-content: flex-start;
   padding: 2.5vh 0;
   transition: left 0.25s ease;
+  text-transform: uppercase;
 }
 
-nav a {
+.nav-list a {
   margin: 2.5vh 0;
   font-size: 1.25rem;
   padding: 0.25vh 2.5vw;
   color: var(--white);
+  text-decoration: none;
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+  text-decoration: underline;
+  color: var(--gold);
 }
 
 .nav-list-active {
   left: 0%;
+}
+
+@media screen and (min-width: 300px) {
+  /* Navigation */
+  header img {
+    height: 5vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Navigation */
+  header {
+    padding: 0 2.5rem;
+  }
+
+  header img {
+    height: 4vh;
+  }
+
+  .nav-list {
+    min-height: 37vh;
+  }
+
+  .nav-list a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Navigation */
+  header {
+    padding: 0 2.5vw;
+  }
+
+  header img {
+    height: 5vh;
+  }
+
+  .header-menu-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    position: static;
+    height: 8vh;
+    width: auto;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: none;
+  }
+
+  .nav-list a {
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 0 1.25vw;
+  }
 }
