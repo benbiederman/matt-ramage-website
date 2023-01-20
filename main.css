@@ -4,17 +4,130 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #203731;
+  --secondary: #d4af37;
+  --red: #a30006;
+  --white: #fff;
+  --black: #000;
+  --font-header: "Anton", sans-serif;
+  --font-default: "Work Sans", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-header);
 }
 
 p,
 li {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font-default);
   font-weight: 400;
+}
+
+/* ***** Galaxy Fold ***** */
+/* Navigation */
+header {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  min-height: 8vh;
+}
+
+.skip-nav-btn {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  height: 8vh;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-default);
+  font-size: 1rem;
+}
+
+.skip-nav-btn:focus {
+  top: 0;
+}
+
+header img {
+  height: 6vh;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.header-menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  width: auto;
+  padding: 5px 0;
+  background: transparent;
+  border: none;
+  position: relative;
+  z-index: 500;
+  cursor: pointer;
+}
+
+.hamburger-1,
+.hamburger-2,
+.hamburger-3 {
+  width: 30px;
+  height: 3px;
+  background-color: var(--secondary);
+  margin: 3px auto;
+  transition: transform 0.25s ease;
+}
+
+.header-menu-active .hamburger-1 {
+  transform: rotate(45deg) translate(6px, 6px);
+  background-color: var(--red);
+}
+
+.header-menu-active .hamburger-2 {
+  opacity: 0;
+}
+
+.header-menu-active .hamburger-3 {
+  transform: rotate(-45deg) translate(7px, -6px);
+  background-color: var(--red);
+}
+
+nav {
+  position: absolute;
+  height: 62vh;
+  top: 8vh;
+  left: -100%;
+  background-color: var(--primary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-header);
+  justify-content: flex-start;
+  padding: 2.5vh 0;
+  transition: left 0.25s ease;
+}
+
+nav a {
+  margin: 2.5vh 0;
+  font-size: 1.25rem;
+  padding: 0.25vh 2.5vw;
+  color: var(--white);
+}
+
+.nav-list-active {
+  left: 0%;
 }

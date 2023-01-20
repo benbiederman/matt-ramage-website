@@ -16,7 +16,36 @@
     <title>Home | Matt Ramage</title>
   </head>
   <body>
-    <main></main>
+    <header>
+      <button
+        type="button"
+        class="skip-nav-btn"
+        aria-label="Skip to main content"
+      >
+        Skip to main content
+      </button>
+      <img src="./img/logo.png" alt="Matt Ramage logo" />
+      <button
+        type="button"
+        class="header-menu-toggle"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="header-navigation"
+      >
+        <span class="hamburger-1"></span>
+        <span class="hamburger-2"></span>
+        <span class="hamburger-3"></span>
+      </button>
+      <nav class="nav-list">
+        <a href="/">Home</a>
+        <a href="https://www.campechecollective.com/shop/green-bay/mattramage"
+          >Merch</a
+        >
+        <a href="https://www.youtube.com/c/MattRamage">Watch</a>
+        <a href="https://anchor.fm/mattramage">Listen</a>
+      </nav>
+    </header>
+    <main id="main-content"></main>
+    <script src="js/main.js"></script>
   </body>
-  <script src="js/main.js"></script>
 </html>
