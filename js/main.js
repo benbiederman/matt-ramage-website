@@ -1,8 +1,11 @@
 const skipBtn = document.querySelector(".skip-nav-btn");
+const headerLogo = document.querySelector(".header-logo");
 const navBtn = document.querySelector(".header-menu-toggle");
 const navList = document.querySelector(".nav-list");
 const navLinks = document.querySelectorAll(".nav-list a");
+const copyright = document.querySelector(".copyright");
 const windowSize = window.innerWidth;
+const year = new Date().getFullYear();
 
 if (windowSize > 1024) {
   navLinks.forEach((link) => {
@@ -12,6 +15,23 @@ if (windowSize > 1024) {
   navLinks.forEach((link) => {
     link.tabIndex = -1;
   });
+}
+
+// Header logo
+headerLogo.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    headerLogoHandler();
+  }
+});
+
+headerLogo.addEventListener("click", (e) => {
+  e.preventDefault();
+  headerLogoHandler();
+});
+
+function headerLogoHandler() {
+  window.location.href = "/";
 }
 
 //Navigation Menu Button
@@ -62,3 +82,6 @@ skipBtn.addEventListener("click", () => {
 function skipContentBtnHandler() {
   window.location.href = "#main-content";
 }
+
+// Copyright
+copyright.innerHTML = `${year} &#169; Matt Ramage`;
