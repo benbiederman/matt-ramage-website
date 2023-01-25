@@ -13,22 +13,43 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
-    <title>Links | Matt Ramage</title>
+    <title>404 not found | Matt Ramage</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.jpg" />
   </head>
   <body>
-    <main class="links-main">
-      <section class="links-hero">
-        <figure>
-          <img
-            src="img/lists/matt-podcast.jpg"
-            alt="Matt Ramage in front of a microphone in his podcast studio."
-          />
-        </figure>
-        <h1>Matt Ramage</h1>
-        <p>That cross eyed Packers guy</p>
-      </section>
-      <div class="link-socials">
+    <header>
+      <button
+        type="button"
+        class="skip-nav-btn"
+        aria-label="Skip to main content"
+      >
+        Skip to main content
+      </button>
+      <img class="header-logo" src="./img/logo.png" alt="Matt Ramage logo" />
+      <button
+        type="button"
+        class="header-menu-toggle"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="header-navigation"
+      >
+        <span class="hamburger-1"></span>
+        <span class="hamburger-2"></span>
+        <span class="hamburger-3"></span>
+      </button>
+      <nav class="nav-list">
+        <a href="/">Home</a>
+        <a href="https://www.campechecollective.com/shop/green-bay/mattramage"
+          >Merch</a
+        >
+        <a href="https://www.youtube.com/c/MattRamage">Watch</a>
+        <a href="https://anchor.fm/mattramage">Listen</a>
+        <a href="/beer-me.html">Beer me!</a>
+      </nav>
+    </header>
+    <main id="main-content"><h1>File not found!</h1></main>
+    <footer>
+      <section class="footer-socials">
         <a
           href="https://www.facebook.com/ramagematt"
           target="_blank"
@@ -59,16 +80,9 @@
           class="social-icon youtube"
           z-index="0"
         ></a>
-      </div>
-      <div class="link-options">
-        <button class="link-option link-website">Website</button>
-        <button class="link-option link-merch">Merch</button>
-        <button class="link-option link-listen">Listen</button>
-        <button class="link-option link-watch">Watch</button>
-        <button class="link-option link-beer-me">Beer me!</button>
-      </div>
-    </main>
+      </section>
+      <p class="copyright"></p>
+    </footer>
   </body>
   <script src="js/main.js"></script>
-  <script src="js/links.js"></script>
 </html>
