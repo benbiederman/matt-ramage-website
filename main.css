@@ -187,7 +187,6 @@ video {
   background-color: var(--gold);
   border: none;
   padding: 5px 0;
-  font-size: 1rem;
 }
 
 /* Links page */
@@ -380,6 +379,29 @@ footer {
 
   .nav-list {
     min-height: 37vh;
+  }
+
+  /* Index */
+  .hero-cta {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 2.5vh 0;
+    text-align: center;
+  }
+
+  .hero-cta h2 {
+    font-size: 2rem;
+  }
+
+  .hero-cta p {
+    width: 50%;
+    font-size: 1.25rem;
+  }
+
+  .hero-cta button {
+    width: 40%;
+    font-size: 1.25rem;
+    padding: 10px 0;
   }
 
   /* Links page */
