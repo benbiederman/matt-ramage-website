@@ -37,15 +37,19 @@ button {
   cursor: pointer;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-secondary {
   border-radius: 2px;
-  background-color: var(--green);
-  border: 2px solid var(--green);
-  color: var(--white);
   padding: 5px 15px;
   font-size: 1rem;
   font-family: var(--font-default);
   transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  color: var(--white);
 }
 
 .btn-primary:hover,
@@ -56,14 +60,9 @@ button {
 }
 
 .btn-secondary {
-  border-radius: 2px;
   background-color: var(--green);
   border: 2px solid var(--gold);
   color: var(--gold);
-  padding: 5px 15px;
-  font-size: 1rem;
-  font-family: var(--font-default);
-  transition: all 0.25s ease;
 }
 
 .btn-secondary:hover,
@@ -248,7 +247,7 @@ video {
   padding-top: 1.25vh;
 }
 
-.bears-suck h2 {
+.bears-suck-cta h3 {
   margin-bottom: 1.25vh;
 }
 
@@ -427,6 +426,11 @@ footer {
     font-size: 1.25rem;
   }
 
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1.25rem;
+  }
+
   /* Navigation */
   header img {
     height: 5vh;
@@ -434,6 +438,14 @@ footer {
 
   .nav-list a {
     font-size: 1.5rem;
+  }
+
+  .bears-suck {
+    padding: 5vh 0;
+  }
+
+  .bears-suck-cta button {
+    margin-top: 5vh;
   }
 
   /* Footer */
@@ -448,14 +460,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .btn-primary {
-    padding: 10px 25px;
-    font-size: 1.25rem;
-  }
-
+  .btn-primary,
   .btn-secondary {
-    font-size: 1.25rem;
     padding: 10px 25px;
+    font-size: 1.25rem;
   }
 
   /* Navigation */
@@ -494,7 +502,6 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
-    padding: 5vh 0;
   }
 
   .bears-suck figure {
@@ -505,6 +512,14 @@ footer {
   .bears-suck-cta {
     width: 40%;
     margin: 0 2.5%;
+  }
+
+  .bears-suck-cta h3 {
+    font-size: 2rem;
+  }
+
+  .bears-suck-cta button {
+    margin: 2.5vh auto;
   }
 
   /* Links page */
@@ -610,7 +625,7 @@ footer {
     margin-right: 2.5%;
   }
 
-  .bears-suck-cta h2 {
+  .bears-suck-cta h3 {
     font-size: 2.5rem;
   }
 
