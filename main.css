@@ -91,6 +91,7 @@ header {
   width: 100%;
   top: 0;
   box-shadow: 0 0 10px var(--black);
+  z-index: 100;
 }
 
 .skip-nav-btn {
@@ -191,7 +192,7 @@ header img {
 }
 
 main {
-  min-height: 92vh;
+  min-height: 80vh;
 }
 
 /* Index */
@@ -460,6 +461,19 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
   .btn-primary,
   .btn-secondary {
     padding: 10px 25px;
@@ -487,13 +501,8 @@ footer {
     text-align: center;
   }
 
-  .hero-cta h2 {
-    font-size: 2rem;
-  }
-
   .hero-cta p {
     width: 50%;
-    font-size: 1.25rem;
   }
 
   /* Bears Still Suck */
@@ -512,10 +521,6 @@ footer {
   .bears-suck-cta {
     width: 40%;
     margin: 0 2.5%;
-  }
-
-  .bears-suck-cta h3 {
-    font-size: 2rem;
   }
 
   .bears-suck-cta button {
@@ -552,6 +557,21 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2.5rem;
+  }
+
+  p,
+  li,
+  a {
+    font-size: 1.25rem;
+  }
+
   .btn-primary,
   .btn-secondary {
     padding: 5px 15px;
@@ -584,7 +604,6 @@ footer {
 
   .nav-list a {
     margin: 0;
-    font-size: 1.25rem;
     padding: 0 1.25vw;
   }
 
@@ -605,10 +624,6 @@ footer {
     justify-content: center;
   }
 
-  .hero-cta h2 {
-    font-size: 2.5rem;
-  }
-
   .hero-cta p {
     width: 50%;
     margin: 2.5vh auto;
@@ -623,10 +638,6 @@ footer {
   .bears-suck-cta {
     width: 40%;
     margin-right: 2.5%;
-  }
-
-  .bears-suck-cta h3 {
-    font-size: 2.5rem;
   }
 
   .bears-suck-cta p {
