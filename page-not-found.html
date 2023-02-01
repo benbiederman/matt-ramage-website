@@ -47,9 +47,26 @@
         <a href="/beer-me.html">Beer me!</a>
       </nav>
     </header>
-    <main id="main-content"><h1>File not found!</h1></main>
+    <main id="main-content" class="white-background main-page-not-found">
+      <section class="page-not-found">
+        <div class="page-not-found-cta">
+          <h3>Well... this is weird</h3>
+          <p>
+            I'm not sure what page you were looking for, but I'll tell you this
+            much... I'm not seeing it.
+          </p>
+          <button class="btn-primary homepage-btn">Back to homepage</button>
+        </div>
+        <figure>
+          <img
+            src="/img/404/matt-ramage-eyes.png"
+            alt="Matt Ramage with crazy eyes"
+          />
+        </figure>
+      </section>
+    </main>
     <footer>
-      <section class="footer-socials">
+      <div class="footer-socials">
         <a
           href="https://www.facebook.com/ramagematt"
           target="_blank"
@@ -60,6 +77,12 @@
           href="https://www.instagram.com/mattramage_/"
           target="_blank"
           class="social-icon instagram"
+          z-index="0"
+        ></a>
+        <a
+          href="https://www.tiktok.com/@mattramage"
+          target="_blank"
+          class="social-icon tiktok"
           z-index="0"
         ></a>
         <a
@@ -80,9 +103,10 @@
           class="social-icon youtube"
           z-index="0"
         ></a>
-      </section>
+      </div>
       <p class="copyright"></p>
     </footer>
   </body>
   <script src="js/main.js"></script>
+  <script src="js/page-not-found.js"></script>
 </html>
