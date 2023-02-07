@@ -62,6 +62,7 @@ button {
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--gold);
+  border: 2px solid var(--gold);
   color: var(--green);
   font-weight: bold;
 }
@@ -278,7 +279,8 @@ video {
 }
 
 .beer-me-header,
-.beer-me-steps {
+.beer-me-steps,
+.disclaimer {
   width: 90%;
 }
 
@@ -324,13 +326,13 @@ video {
 }
 
 .disclaimer {
-  width: 90%;
   margin: 0 auto;
   margin: 5vh auto 2.5vh;
   text-align: center;
 }
 
-.disclaimer p {
+.disclaimer p,
+.disclaimer a {
   font-size: 0.8rem;
 }
 
@@ -571,7 +573,8 @@ footer {
     margin: 2.5vh 0;
   }
 
-  .disclaimer p {
+  .disclaimer p,
+  .disclaimer a {
     font-size: 1rem;
   }
 
@@ -601,7 +604,8 @@ footer {
     font-size: 2rem;
   }
 
-  p {
+  p,
+  li {
     font-size: 1.25rem;
   }
 
@@ -656,6 +660,31 @@ footer {
 
   .bears-suck-cta button {
     margin: 2.5vh auto;
+  }
+
+  /* Beer Me */
+  .beer-me figure {
+    width: 50%;
+    margin: 5vh auto 2.5vh;
+  }
+
+  .beer-me-header,
+  .beer-me-steps,
+  .disclaimer {
+    width: 70%;
+  }
+
+  .beer-me-steps li {
+    padding-left: 1.25vw;
+  }
+
+  .beer-me-steps button {
+    margin: 2.5vh 0 0 0;
+  }
+
+  .disclaimer p,
+  .disclaimer a {
+    font-size: 1rem;
   }
 
   /* Links page */
@@ -787,6 +816,27 @@ footer {
   .bears-suck-cta p {
     width: 70%;
     margin: 2.5vh auto 5vh;
+  }
+
+  /* Beer Me */
+  .beer-me figure {
+    width: 30%;
+    margin: 5vh auto 2.5vh;
+  }
+
+  .beer-me-header,
+  .beer-me-steps,
+  .disclaimer {
+    width: 40%;
+  }
+
+  .beer-me-steps button {
+    margin: 2.5vh 0 0 0;
+  }
+
+  .disclaimer p,
+  .disclaimer a {
+    font-size: 1rem;
   }
 
   /* Links page */
