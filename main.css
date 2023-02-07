@@ -24,6 +24,8 @@ h6 {
   font-family: var(--font-header);
   font-weight: 100;
   text-transform: uppercase;
+  font-size: 1.25rem;
+  color: var(--gray);
 }
 
 p,
@@ -31,6 +33,11 @@ li {
   font-family: var(--font-default);
   font-weight: 400;
   font-size: 1rem;
+  color: var(--gray);
+}
+
+a {
+  color: var(--gray);
 }
 
 button {
@@ -40,7 +47,7 @@ button {
 .btn-primary,
 .btn-secondary {
   border-radius: 2px;
-  padding: 5px 15px;
+  padding: 5px 20px;
   font-size: 1rem;
   font-family: var(--font-default);
   transition: all 0.25s ease;
@@ -220,10 +227,11 @@ video {
 .hero-cta p {
   width: 90%;
   margin: 1.25vh auto;
+  color: var(--white);
 }
 
 .hero-cta button {
-  margin: 2.5vh auto;
+  margin: 5vh auto 2.5vh;
 }
 
 /* Bears Still Suck */
@@ -244,7 +252,6 @@ video {
 .bears-suck-cta {
   width: 80%;
   margin: 0 auto;
-  color: var(--gray);
   padding-top: 1.25vh;
 }
 
@@ -257,7 +264,74 @@ video {
 }
 
 .bears-suck button {
-  margin-top: 2.5vh;
+  margin: 5vh 0 2.5vh;
+}
+
+/* Beer Me */
+.beer-me figure {
+  width: 90%;
+  margin: 2.5vh auto;
+}
+
+.beer-me img {
+  width: 100%;
+}
+
+.beer-me-header,
+.beer-me-steps {
+  width: 90%;
+}
+
+.beer-me-header {
+  margin: 0 auto;
+}
+
+.beer-me-steps {
+  margin: 5vh auto 2.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.beer-me-header h2,
+.beer-me-steps h3 {
+  text-align: center;
+}
+
+.beer-me-header p {
+  width: 90%;
+  margin: 2.5vh auto;
+}
+
+.beer-me-steps ol {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.beer-me-steps li {
+  margin: 2.5vh auto;
+  padding-left: 2.5vw;
+}
+
+.beer-me-steps li::marker {
+  font-weight: bold;
+  display: block;
+}
+
+.beer-me-steps button {
+  margin: 5vh 0 2.5vh;
+}
+
+.disclaimer {
+  width: 90%;
+  margin: 0 auto;
+  margin: 5vh auto 2.5vh;
+  text-align: center;
+}
+
+.disclaimer p {
+  font-size: 0.8rem;
 }
 
 /* Links page */
@@ -269,7 +343,6 @@ video {
   background-size: auto;
   background-repeat: repeat;
   background-image: url("./img/lists/background.jpg");
-  color: var(--white);
 }
 
 .links-hero {
@@ -280,6 +353,11 @@ video {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--white);
+}
+
+.links-hero p {
+  color: var(--white);
 }
 
 .links-hero figure {
@@ -368,6 +446,7 @@ footer {
 
 .copyright {
   font-size: 0.8rem;
+  color: var(--white);
 }
 
 .footer-socials {
@@ -457,10 +536,11 @@ footer {
   h4,
   h5,
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
-  p {
+  p,
+  li {
     font-size: 1.25rem;
   }
 
@@ -484,6 +564,15 @@ footer {
 
   .bears-suck-cta button {
     margin-top: 5vh;
+  }
+
+  /* Beer Me */
+  .beer-me-steps button {
+    margin: 2.5vh 0;
+  }
+
+  .disclaimer p {
+    font-size: 1rem;
   }
 
   /* 404 Page */
