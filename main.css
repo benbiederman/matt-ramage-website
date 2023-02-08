@@ -269,9 +269,13 @@ video {
 }
 
 /* Beer Me */
+.beer-me {
+  padding: 2.5vh 0;
+}
+
 .beer-me figure {
   width: 90%;
-  margin: 2.5vh auto;
+  margin: 0 auto;
 }
 
 .beer-me img {
@@ -327,7 +331,7 @@ video {
 
 .disclaimer {
   margin: 0 auto;
-  margin: 5vh auto 2.5vh;
+  margin-bottom: 2.5vh;
   text-align: center;
 }
 
@@ -665,7 +669,7 @@ footer {
   /* Beer Me */
   .beer-me figure {
     width: 50%;
-    margin: 5vh auto 2.5vh;
+    margin: 2.5vh auto;
   }
 
   .beer-me-header,
@@ -832,6 +836,10 @@ footer {
 
   .beer-me-steps button {
     margin: 2.5vh 0 0 0;
+  }
+
+  .disclaimer {
+    margin: 5vh auto 2.5vh;
   }
 
   .disclaimer p,
