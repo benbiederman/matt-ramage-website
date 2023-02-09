@@ -45,7 +45,8 @@ button {
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-secondary-green {
   border-radius: 2px;
   padding: 5px 20px;
   font-size: 1rem;
@@ -80,8 +81,27 @@ button {
   font-weight: bold;
 }
 
+.btn-secondary-green {
+  background-color: var(--gold);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.btn-secondary-green:hover,
+.btn-secondary-green:focus {
+  background-color: var(--green);
+  color: var(--gold);
+  font-weight: bold;
+}
+
 .white-background {
   background: url("/img/white-background.png");
+  width: 100%;
+  height: 100%;
+}
+
+.gold-background {
+  background-color: var(--gold);
   width: 100%;
   height: 100%;
 }
@@ -262,10 +282,63 @@ video {
 
 .bears-suck-cta p {
   font-weight: 500;
+  text-align: left;
 }
 
 .bears-suck button {
+  margin-top: 5vh;
+}
+
+/* Business inquiries index */
+.spikes {
+  position: relative;
+  background-image: url("/img/white-background.png");
+  height: 2.5vh;
+}
+
+.spikes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 25px;
+  background-size: 25px 100%;
+  background-image: linear-gradient(135deg, #fbfbfb 25%, transparent 25%),
+    linear-gradient(225deg, #fbfbfb 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+.business div {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5vh;
+  text-align: center;
+}
+
+.business h4 {
+  margin-bottom: 1.25vh;
+}
+
+.business p {
+  text-align: left;
+}
+
+.business button {
   margin: 5vh 0 2.5vh;
+}
+
+.business figure {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.business img {
+  width: 75%;
 }
 
 /* Beer Me */
@@ -331,7 +404,7 @@ video {
 
 .disclaimer {
   margin: 0 auto;
-  margin-bottom: 2.5vh;
+  padding-bottom: 2.5vh;
   text-align: center;
 }
 
@@ -551,7 +624,8 @@ footer {
   }
 
   .btn-primary,
-  .btn-secondary {
+  .btn-secondary,
+  .btn-secondary-green {
     font-size: 1.25rem;
   }
 
@@ -614,7 +688,8 @@ footer {
   }
 
   .btn-primary,
-  .btn-secondary {
+  .btn-secondary,
+  .btn-secondary-green {
     padding: 10px 25px;
     font-size: 1.25rem;
   }
@@ -664,6 +739,23 @@ footer {
 
   .bears-suck-cta button {
     margin: 2.5vh auto;
+  }
+
+  /* Business inquiries index */
+  .business div {
+    width: 70%;
+  }
+
+  .business button {
+    margin: 5vh 0 0;
+  }
+
+  .business figure {
+    margin-top: -5vh;
+  }
+
+  .business img {
+    width: 40%;
   }
 
   /* Beer Me */
@@ -750,7 +842,8 @@ footer {
   }
 
   .btn-primary,
-  .btn-secondary {
+  .btn-secondary,
+  .btn-secondary-green {
     padding: 5px 15px;
   }
 
@@ -822,6 +915,52 @@ footer {
     margin: 2.5vh auto 5vh;
   }
 
+  /* Business inquiries index */
+  .business {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 50vh;
+    position: relative;
+  }
+
+  .business div {
+    width: 40%;
+    padding-top: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+
+  .business h4 {
+    margin-bottom: 1.25vh;
+  }
+
+  .business p {
+    margin-top: 2.5vh;
+    text-align: left;
+  }
+
+  .business button {
+    margin: 5vh 0 2.5vh;
+  }
+
+  .business figure {
+    max-height: 55vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+  }
+
+  .business img {
+    width: 60%;
+  }
+
   /* Beer Me */
   .beer-me figure {
     width: 30%;
@@ -839,7 +978,7 @@ footer {
   }
 
   .disclaimer {
-    margin: 5vh auto 2.5vh;
+    margin-top: 2.5vh;
   }
 
   .disclaimer p,
