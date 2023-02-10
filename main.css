@@ -69,29 +69,29 @@ button {
 }
 
 .btn-secondary {
-  background-color: var(--green);
+  background-color: var(--gold);
   border: 2px solid var(--gold);
-  color: var(--gold);
+  color: var(--green);
+  font-weight: bold;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: var(--gold);
-  color: var(--green);
-  font-weight: bold;
+  background-color: var(--green);
+  color: var(--gold);
 }
 
 .btn-secondary-green {
-  background-color: var(--gold);
+  background-color: var(--green);
   border: 2px solid var(--green);
-  color: var(--green);
+  color: var(--white);
+  font-weight: bold;
 }
 
 .btn-secondary-green:hover,
 .btn-secondary-green:focus {
-  background-color: var(--green);
-  color: var(--gold);
-  font-weight: bold;
+  background-color: var(--gold);
+  color: var(--green);
 }
 
 .white-background {
@@ -320,10 +320,6 @@ video {
 
 .business h4 {
   margin-bottom: 1.25vh;
-}
-
-.business p {
-  text-align: left;
 }
 
 .business button {
@@ -939,11 +935,6 @@ footer {
 
   .business h4 {
     margin-bottom: 1.25vh;
-  }
-
-  .business p {
-    margin-top: 2.5vh;
-    text-align: left;
   }
 
   .business button {
