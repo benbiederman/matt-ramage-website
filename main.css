@@ -335,6 +335,7 @@ video {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  pointer-events: none;
 }
 
 .business img {
