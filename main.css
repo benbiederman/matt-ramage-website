@@ -474,6 +474,13 @@ hr {
   text-align: center;
   display: none;
   text-align: left;
+  cursor: pointer;
+  padding-bottom: 0.5vh;
+}
+
+.video:hover p,
+.video:focus p {
+  text-decoration: underline;
 }
 
 .active-video {
@@ -880,6 +887,42 @@ footer {
   .disclaimer p,
   .disclaimer a {
     font-size: 1rem;
+  }
+
+  /* Business Inquiries */
+  .prev-video,
+  .next-video {
+    display: none;
+  }
+
+  .business-inquiries figure {
+    width: 50%;
+  }
+
+  .business-inquiries-cta {
+    width: 70%;
+    margin: 1.25vh auto;
+  }
+
+  .business-inquiries-cta p {
+    margin: 2.5vh auto;
+  }
+
+  hr {
+    width: 70%;
+  }
+
+  .videos {
+    padding: 0 0 2.5vh;
+    min-height: 25vh;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .video {
+    width: 30%;
+    display: block;
   }
 
   /* Links page */
