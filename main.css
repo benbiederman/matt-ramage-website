@@ -447,6 +447,62 @@ video {
   font-style: normal;
 }
 
+hr {
+  width: 80%;
+  margin: 2.5vh auto;
+  height: 3px;
+  background-color: var(--gray);
+}
+
+.videos {
+  position: relative;
+  padding: 2.5vh 0;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.videos .btn-primary {
+  padding: 5px 5px;
+}
+
+.video {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  text-align: left;
+}
+
+.active-video {
+  display: block;
+}
+
+.videos figure {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.videos img {
+  width: 100%;
+}
+
+.prev-video,
+.next-video {
+  position: absolute;
+  top: 35%;
+}
+
+.prev-video {
+  left: 2.5vw;
+}
+
+.next-video {
+  right: 2.5vw;
+}
+
 /* Links page */
 .links-main {
   padding: 5vh 0;
@@ -688,6 +744,15 @@ footer {
   .disclaimer p,
   .disclaimer a {
     font-size: 1rem;
+  }
+
+  /* Business Inquiries */
+  .business-inquiries-cta a {
+    font-size: 1.25rem;
+  }
+
+  .videos {
+    min-height: 45vh;
   }
 
   /* 404 Page */
