@@ -20,6 +20,24 @@ nextVideo.addEventListener("click", function () {
   changeActiveVideo("next");
 });
 
+videos[0].addEventListener("click", function () {
+  window.open("https://www.youtube.com/watch?v=a6bLpx65onU&t=42s", "_blank");
+});
+
+videos[1].addEventListener("click", function () {
+  window.open(
+    "https://www.facebook.com/ramagematt/videos/679966689493410/",
+    "_blank"
+  );
+});
+
+videos[2].addEventListener("click", function () {
+  window.open(
+    "https://www.facebook.com/ramagematt/videos/860463995085922",
+    "_blank"
+  );
+});
+
 function setActiveVideos(width) {
   if (width < 768) {
     videos.forEach((video) => {
@@ -57,21 +75,3 @@ function changeActiveVideo(navigation) {
   videos[activeVideo].classList.add("active-video");
   videos[activeVideo].tabIndex = 0;
 }
-
-videos[0].addEventListener("click", function () {
-  window.open("https://www.youtube.com/watch?v=a6bLpx65onU&t=42s", "_blank");
-});
-
-videos[1].addEventListener("click", function () {
-  window.open(
-    "https://www.facebook.com/ramagematt/videos/679966689493410/",
-    "_blank"
-  );
-});
-
-videos[2].addEventListener("click", function () {
-  window.open(
-    "https://www.facebook.com/ramagematt/videos/860463995085922",
-    "_blank"
-  );
-});
