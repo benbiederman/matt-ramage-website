@@ -25,18 +25,22 @@ function setActiveVideos(width) {
     videos.forEach((video) => {
       if (video.classList.contains("active-video")) {
         video.classList.remove("active-video");
+        video.tabIndex = -1;
       }
     });
     videos[activeVideo].classList.add("active-video");
+    videos[activeVideo].tabIndex = 0;
   } else {
     videos.forEach((video) => {
       video.classList.add("active-video");
+      video.tabIndex = 0;
     });
   }
 }
 
 function changeActiveVideo(navigation) {
   videos[activeVideo].classList.remove("active-video");
+  videos[activeVideo].tabIndex = -1;
 
   if (navigation === "prev" && activeVideo === 0) {
     activeVideo = videos.length - 1;
@@ -51,4 +55,5 @@ function changeActiveVideo(navigation) {
   }
 
   videos[activeVideo].classList.add("active-video");
+  videos[activeVideo].tabIndex = 0;
 }
