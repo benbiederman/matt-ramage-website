@@ -1101,7 +1101,7 @@ footer {
   /* Beer Me */
   .beer-me figure {
     width: 30%;
-    margin: 5vh auto 2.5vh;
+    margin: 2.5vh auto;
   }
 
   .beer-me-header,
@@ -1121,6 +1121,62 @@ footer {
   .disclaimer p,
   .disclaimer a {
     font-size: 1rem;
+  }
+
+  /* Business Inquiries */
+  .prev-video,
+  .next-video {
+    display: none;
+  }
+
+  .business-inquiries figure {
+    width: 30%;
+    margin: 2.5vh auto;
+  }
+
+  .business-inquiries-cta {
+    width: 40%;
+    margin: 1.25vh auto;
+  }
+
+  hr {
+    width: 40%;
+  }
+
+  .videos {
+    padding: 2.5vh 0 5vh;
+    min-height: 25vh;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .video {
+    width: 30%;
+    display: block;
+    position: relative;
+  }
+
+  .video:hover p,
+  .video:focus p {
+    height: 98%;
+    width: 100%;
+    background-color: var(--green);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font-header);
+    color: var(--gold);
+  }
+
+  .video p {
+    display: none;
+    position: absolute;
+    top: 0;
   }
 
   /* Links page */
