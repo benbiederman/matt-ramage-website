@@ -687,6 +687,15 @@ footer {
   background-image: url("/img/icons/twitch-gold.png");
 }
 
+.threads {
+  background-image: url("/img/icons/threads-white.png");
+}
+
+.threads:hover,
+.threads:focus {
+  background-image: url("/img/icons/threads-gold.png");
+}
+
 .twitter {
   background-image: url("/img/icons/twitter-white.png");
 }

@@ -31,13 +31,13 @@
         class="header-menu-toggle"
         aria-label="Menu"
         aria-expanded="false"
-        aria-controls="header-navigation"
+        aria-controls="navigation"
       >
         <span class="hamburger-1"></span>
         <span class="hamburger-2"></span>
         <span class="hamburger-3"></span>
       </button>
-      <nav class="nav-list">
+      <nav class="nav-list" id="navigation">
         <a href="/">Home</a>
         <a href="https://www.campechecollective.com/shop/green-bay/mattramage"
           >Merch</a
@@ -49,13 +49,15 @@
     </header>
     <main id="main-content" class="white-background main-page-not-found">
       <section class="page-not-found">
-        <div class="page-not-found-cta">
+        <div class="page-not-found-cta" tabindex="0">
           <h3>Well... this is weird</h3>
           <p>
             I'm not sure what page you were looking for, but I'll tell you this
             much... I'm not seeing it.
           </p>
-          <button class="btn-primary homepage-btn">Back to homepage</button>
+          <button role="link" class="btn-primary homepage-btn">
+            Back to homepage
+          </button>
         </div>
         <figure>
           <img
@@ -71,42 +73,55 @@
           href="https://www.facebook.com/ramagematt"
           target="_blank"
           class="social-icon facebook"
-          z-index="0"
+          tabindex="0"
+          aria-label="Facebook icon"
         ></a>
         <a
           href="https://www.instagram.com/mattramage_/"
           target="_blank"
           class="social-icon instagram"
-          z-index="0"
+          tabindex="0"
+          aria-label="Instagram icon"
         ></a>
         <a
           href="https://www.tiktok.com/@mattramage"
           target="_blank"
           class="social-icon tiktok"
-          z-index="0"
+          tabindex="0"
+          aria-label="TickTock icon"
         ></a>
         <a
           href="https://www.twitch.tv/mattramage"
           target="_blank"
           class="social-icon twitch"
-          z-index="0"
+          tabindex="0"
+          aria-label="Twitch icon"
+        ></a>
+        <a
+          href="https://www.threads.net/@mattramage_"
+          target="_blank"
+          class="social-icon threads"
+          tabindex="0"
+          aria-label="Threads icon"
         ></a>
         <a
           href="https://twitter.com/mattramage"
           target="_blank"
           class="social-icon twitter"
-          z-index="0"
+          tabindex="0"
+          aria-label="Twitter icon"
         ></a>
         <a
           href="https://www.youtube.com/@MattRamage"
           target="_blank"
           class="social-icon youtube"
-          z-index="0"
+          tabindex="0"
+          aria-label="YouTube icon"
         ></a>
       </div>
       <p class="copyright"></p>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/page-not-found.js"></script>
   </body>
-  <script src="js/main.js"></script>
-  <script src="js/page-not-found.js"></script>
 </html>

@@ -19,13 +19,13 @@
     <!-- Photo shown when shared -->
     <meta
       property="og:image"
-      content="http://www.themattramage.com/img/thumbnail/index.jpg"
+      content="http://www.themattramage.com/img/thumbnails/index.jpg"
     />
 
     <!--Website description -->
     <meta
       name="description"
-      content="The official website of your favorite cock-eyed Packers fan, Matt Ramage."
+      content="The official website of your favorite cross eyed Packers fan, Matt Ramage."
     />
   </head>
   <body>
@@ -43,13 +43,13 @@
         class="header-menu-toggle"
         aria-label="Menu"
         aria-expanded="false"
-        aria-controls="header-navigation"
+        aria-controls="navigation"
       >
         <span class="hamburger-1"></span>
         <span class="hamburger-2"></span>
         <span class="hamburger-3"></span>
       </button>
-      <nav class="nav-list">
+      <nav class="nav-list" id="navigation">
         <a href="/">Home</a>
         <a href="https://www.campechecollective.com/shop/green-bay/mattramage"
           >Merch</a
@@ -69,6 +69,7 @@
           <button
             class="btn-secondary"
             aria-label="Watch The Matt Ramage Show on Youtube"
+            role="link"
           >
             Watch now
           </button>
@@ -76,12 +77,11 @@
         <video
           class="hero-video"
           src="/videos/hero-video.mp4"
-          type="video/mp4"
           autoplay
           loop
           muted
           playsinline
-        />
+        ></video>
       </section>
       <section class="bears-suck white-background">
         <figure>
@@ -93,11 +93,18 @@
         <div class="bears-suck-cta">
           <h3>The Bears still suck.</h3>
           <p>
-            We all know it. Whether you're lounging at home or braving elements
-            at a Packers game, this hoodie will keep you warm and stylish while
-            making a statement. Order now and let 'em know the Bears Still Suck!
+            We all know it. Whether you're lounging at home or braving the
+            elements at a Packers game, this hoodie will keep you warm and
+            stylish while making a statement. Order now and let 'em know the
+            Bears Still Suck!
           </p>
-          <button class="btn-primary">Get your BSS Hoodie</button>
+          <button
+            class="btn-primary"
+            aria-label="Get your Bears Still Suck Hoodie"
+            role="link"
+          >
+            Get your BSS Hoodie
+          </button>
         </div>
       </section>
       <div class="spikes"></div>
@@ -105,7 +112,13 @@
         <div>
           <h4>Are you an awesome business looking to collaborate?</h4>
 
-          <button class="btn-secondary-green">Let's talk</button>
+          <button
+            class="btn-secondary-green"
+            role="link"
+            aria-label="Let's talk about collaborating"
+          >
+            Let's talk
+          </button>
         </div>
         <figure>
           <img
@@ -121,42 +134,55 @@
           href="https://www.facebook.com/ramagematt"
           target="_blank"
           class="social-icon facebook"
-          z-index="0"
+          tabindex="0"
+          aria-label="Facebook icon"
         ></a>
         <a
           href="https://www.instagram.com/mattramage_/"
           target="_blank"
           class="social-icon instagram"
-          z-index="0"
+          tabindex="0"
+          aria-label="Instagram icon"
         ></a>
         <a
           href="https://www.tiktok.com/@mattramage"
           target="_blank"
           class="social-icon tiktok"
-          z-index="0"
+          tabindex="0"
+          aria-label="TickTock icon"
         ></a>
         <a
           href="https://www.twitch.tv/mattramage"
           target="_blank"
           class="social-icon twitch"
-          z-index="0"
+          tabindex="0"
+          aria-label="Twitch icon"
+        ></a>
+        <a
+          href="https://www.threads.net/@mattramage_"
+          target="_blank"
+          class="social-icon threads"
+          tabindex="0"
+          aria-label="Threads icon"
         ></a>
         <a
           href="https://twitter.com/mattramage"
           target="_blank"
           class="social-icon twitter"
-          z-index="0"
+          tabindex="0"
+          aria-label="Twitter icon"
         ></a>
         <a
           href="https://www.youtube.com/@MattRamage"
           target="_blank"
           class="social-icon youtube"
-          z-index="0"
+          tabindex="0"
+          aria-label="YouTube icon"
         ></a>
       </div>
       <p class="copyright"></p>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
   </body>
-  <script src="js/main.js"></script>
-  <script src="js/index.js"></script>
 </html>

@@ -19,7 +19,7 @@
     <!-- Photo shown when shared -->
     <meta
       property="og:image"
-      content="http://www.themattramage.com/img/thumbnail/business.jpg"
+      content="http://www.themattramage.com/img/thumbnails/business.jpg"
     />
 
     <!--Website description -->
@@ -43,13 +43,13 @@
         class="header-menu-toggle"
         aria-label="Menu"
         aria-expanded="false"
-        aria-controls="header-navigation"
+        aria-controls="navigation"
       >
         <span class="hamburger-1"></span>
         <span class="hamburger-2"></span>
         <span class="hamburger-3"></span>
       </button>
-      <nav class="nav-list">
+      <nav class="nav-list" id="navigation">
         <a href="/">Home</a>
         <a href="https://www.campechecollective.com/shop/green-bay/mattramage"
           >Merch</a
@@ -60,7 +60,7 @@
       </nav>
     </header>
     <main id="main-content" class="white-background">
-      <section class="business-inquiries">
+      <section class="business-inquiries" tabindex="0">
         <figure>
           <img
             src="/img/business/matt-kwik-trip.jpg"
@@ -88,13 +88,17 @@
           </p>
 
           <address>
-            <a href="mailto:brent@miseagency.com">Brent@miseagency.com</a>
+            <a
+              aria-label="email brent@MiseAgency.com"
+              href="mailto:brent@miseagency.com"
+              >Brent@MiseAgency.com</a
+            >
           </address>
         </div>
       </section>
       <hr />
       <aside class="videos">
-        <button class="prev-video btn-primary"><</button>
+        <button class="prev-video btn-primary">&lt;</button>
         <div class="video">
           <figure>
             <img
@@ -125,7 +129,7 @@
           <p>Kwik Trip Pothole Pizza review - Watch on Facebook</p>
         </div>
 
-        <button class="next-video btn-primary">></button>
+        <button class="next-video btn-primary">&gt;</button>
       </aside>
     </main>
     <footer>
@@ -134,42 +138,55 @@
           href="https://www.facebook.com/ramagematt"
           target="_blank"
           class="social-icon facebook"
-          z-index="0"
+          tabindex="0"
+          aria-label="Facebook icon"
         ></a>
         <a
           href="https://www.instagram.com/mattramage_/"
           target="_blank"
           class="social-icon instagram"
-          z-index="0"
+          tabindex="0"
+          aria-label="Instagram icon"
         ></a>
         <a
           href="https://www.tiktok.com/@mattramage"
           target="_blank"
           class="social-icon tiktok"
-          z-index="0"
+          tabindex="0"
+          aria-label="TickTock icon"
         ></a>
         <a
           href="https://www.twitch.tv/mattramage"
           target="_blank"
           class="social-icon twitch"
-          z-index="0"
+          tabindex="0"
+          aria-label="Twitch icon"
+        ></a>
+        <a
+          href="https://www.threads.net/@mattramage_"
+          target="_blank"
+          class="social-icon threads"
+          tabindex="0"
+          aria-label="Threads icon"
         ></a>
         <a
           href="https://twitter.com/mattramage"
           target="_blank"
           class="social-icon twitter"
-          z-index="0"
+          tabindex="0"
+          aria-label="Twitter icon"
         ></a>
         <a
           href="https://www.youtube.com/@MattRamage"
           target="_blank"
           class="social-icon youtube"
-          z-index="0"
+          tabindex="0"
+          aria-label="YouTube icon"
         ></a>
       </div>
       <p class="copyright"></p>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/business.js"></script>
   </body>
-  <script src="js/main.js"></script>
-  <script src="js/business.js"></script>
 </html>
