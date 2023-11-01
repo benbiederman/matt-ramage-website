@@ -643,7 +643,7 @@ footer {
 }
 
 .social-icon {
-  margin: 0 2.5vw;
+  margin: 0 1.5vw;
   width: 20px;
   height: 20px;
   background-position: center;
@@ -712,6 +712,15 @@ footer {
 .youtube:hover,
 .youtube:focus {
   background-image: url("/img/icons/youtube-gold.png");
+}
+
+.cameo {
+  background-image: url("/img/icons/cameo-white.png");
+}
+
+.cameo:hover,
+.cameo:focus {
+  background-image: url("/img/icons/cameo-gold.png");
 }
 
 @media screen and (min-width: 300px) {
